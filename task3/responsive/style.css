@@ -139,8 +139,12 @@ nav a{
 /* Mobile Menu */
 .mobile-nav{ display:none; }
 @media (max-width:599px){
-  nav ul{ display:none; }
-  .menu-toggle{ display:flex; }
+  nav ul{ 
+    display:none; 
+  }
+  .menu-toggle{ 
+    display:flex; 
+  }
   .mobile-nav{
     display:flex;
     margin-top:.6rem;
@@ -152,5 +156,12 @@ nav a{
     padding:.6rem;
     border-radius:10px;
     background:var(--glass);
+    text-decoration:none;
+    padding:.45rem .6rem;
+    border-radius:8px;
+    color:inherit;
+    font-weight:600;
   }
 }
+
+
