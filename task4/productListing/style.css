@@ -1,0 +1,209 @@
+/* ========== Basic Theme Colors ========== */
+:root {
+  --bg: #0b0b0f;
+  --card: #13131a;
+  --muted: #9aa0a6;
+  --accent: #ff4dc4;
+  --accent-2: #6a5bff;
+}
+
+/* Reset */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg);
+  color: #ffffff;
+}
+
+/* ========== HEADER ========== */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 6%;
+  background: #111118;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.brand {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.brand span {
+  color: var(--accent-2);
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--muted);
+  margin-left: 16px;
+}
+
+.nav a:hover {
+  color: var(--accent);
+}
+
+/* ========== MAIN CONTENT ========== */
+.main {
+  padding: 30px 6%;
+}
+
+/* === Filter + Sorting Controls === */
+.controls {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.filter-block {
+  background: #151520;
+  padding: 10px;
+  border-radius: 8px;
+  min-width: 160px;
+}
+
+.filter-block label {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 6px;
+  display: block;
+}
+
+.filter-block select,
+.search-block input {
+  width: 100%;
+  padding: 8px;
+  background: #1a1a25;
+  border: 1px solid #333;
+  border-radius: 6px;
+  color: white;
+}
+
+.search-block {
+  flex: 1;
+  min-width: 220px;
+}
+
+/* ========== PRODUCTS GRID ========== */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+/* === Product Card === */
+.card {
+  background: var(--card);
+  border-radius: 10px;
+  padding: 12px;
+  border: 1px solid #222;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Product Image Box */
+.card .img {
+  height: 150px;
+  background: #0e0e14;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 0px;
+}
+
+/* Category Tag */
+.tag {
+  display: inline-block;
+  padding: 4px 8px;
+  background: #2a1d27;
+  color: var(--accent);
+  border-radius: 12px;
+  font-size: 0.8rem;
+  margin-right: 6px;
+}
+
+/* Text Info */
+.title {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.price {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.rating {
+  position: absolute;
+  /* top: 12px; */
+  /* left: 12px; */
+  background: var(--accent);
+  padding: 6px 8px;
+  border-radius: 8px;
+  font-weight: 700;
+  color: black;
+  width: 53px;
+  margin: 10px;
+}
+
+.card .meta {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+/* ========== EMPTY STATE ========== */
+.empty {
+  text-align: center;
+  padding: 40px;
+  grid-column: 1 / -1;
+  color: var(--muted);
+}
+
+.buyBtn {
+    padding: 8px 18px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background: rgb(7, 149, 7);
+    font-weight: bold;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+@media (max-width: 700px) {
+  .controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filter-block {
+    min-width: 100%;
+  }
+}
+
+.site-footer {
+    text-align: center;
+}

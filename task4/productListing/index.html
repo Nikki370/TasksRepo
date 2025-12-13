@@ -1,0 +1,67 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Products Page</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">Pro<span>Shop</span></div>
+    <nav class="nav">
+      <a href="#">Home</a>
+      <a href="#">Collections</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="controls">
+      <div class="filter-block">
+        <label>Category</label>
+        <select id="categoryFilter">
+          <option value="all">All</option>
+        </select>
+      </div>
+
+      <div class="filter-block">
+        <label>Price</label>
+        <select id="priceFilter">
+          <option value="all">All</option>
+          <option value="0-50">Under $50</option>
+          <option value="50-150">$50 - $150</option>
+          <option value="150-9999">$150+</option>
+        </select>
+      </div>
+
+      <div class="filter-block">
+        <label>Sort by</label>
+        <select id="sortSelect">
+          <option value="featured">Featured</option>
+          <option value="price-asc">Price: Low → High</option>
+          <option value="price-desc">Price: High → Low</option>
+          <option value="rating-desc">Rating</option>
+          <option value="name-asc">Name A → Z</option>
+        </select>
+      </div>
+
+      <div class="search-block">
+        <input id="searchInput" placeholder="Search products..." />
+      </div>
+    </section>
+
+    <section class="products-grid" id="productsGrid">
+      
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 NeonShop. Crafted with ProShop.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

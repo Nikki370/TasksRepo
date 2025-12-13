@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"> Nikita | > </div>
+            <ul class="nav-links">
+                <li><a href="index.html">About</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="overlay"></div>
+        <h1>Hi, I'm <span>Nikita</span></h1>
+        <p>A Frontend Developer passionate about building beautiful UIs and also a ML enthusiast.</p>
+        <button class="btn" onclick="scrollToSection('about')">About Me</button>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="underDiv"></div>
+        <p>
+            I'm Nikita (Nikki), a second-year student doing <b>BSc in CS and data analytics</b> at <b>IIT Patna</b>, who loves creating smart web apps and diving deep into machine learning. My goal is to craft solutions that make learning and technology more accessible.
+        </p>
+    </section>
+
+    <!-- Skills Section Added -->
+    <div class="skills" id="skill">
+        <h2>My Skills</h2>
+        <div class="underDiv"></div>
+        <div class="skill-container">
+            <div class="skillNameBox">
+                <p class="skillName">HTML</p>
+            </div>
+
+            <div class="skillNameBox">
+                <p class="skillName">CSS</p>
+            </div>
+
+            <div class="skillNameBox">
+                <p class="skillName">JS</p>
+            </div>
+
+            <div class="skillNameBox">
+                <p class="skillName">Python</p>
+            </div>
+
+            <div class="skillNameBox">
+                <p class="skillName">SQL</p>
+            </div>
+        </div>
+
+        <div class="subskills">
+            <h4>Libraries / Frameworks</h4>
+            <ul>
+                <li>Pandas</li>
+                <li>NumPy</li>
+                <li>Scikit-learn</li>
+                <li>Tailwind CSS</li>
+                <li>Matplotlib</li>
+                <li>Seaborn</li>
+                <li>Flask</li>
+            </ul>
+        </div>
+
+        <div class="subskills">
+            <h4>Tools</h4>
+            <ul>
+                <li>VS Code</li>
+                <li>Git</li>
+                <li>Jupyter Notebook</li>
+                <li>Excel</li>
+                <li>Power BI</li>
+                <li>Overleaf</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Nikita Kumari. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

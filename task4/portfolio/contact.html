@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"> Nikita | ></div>
+            <ul class="nav-links">
+                <li><a href="index.html">About</a></li>
+<li><a href="project.html">Projects</a></li>
+<li><a href="contact.html">Contact</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="overlay"></div>
+        <h1>Hi, I'm <span>Nikita</span></h1>
+        <p>A Frontend Developer passionate about building beautiful UIs and also a ML enthusiast.</p>
+        <button class="btn" onclick="scrollToSection('contact')">Contact me</button>
+    </section>
+
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send</button>
+        </form>
+    </section>
+
+    <footer>
+<p>© 2025 Nikita Kumari. All Rights Reserved.</p>    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
