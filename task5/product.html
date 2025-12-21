@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products - TrendyShop</title>
+    <link rel="icon" type="image/png" href="TrendyShop_logo.png">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container">
+        <h1 class="logo"><a href="index.html">Trendy</a><span>shop</span></h1>
+
+        <div id="mobile">☰</div>
+
+        <div class="hamburgerBox">
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="product.html">Products</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+
+          <div class="nav-actions">
+            <a href="cart.html" class="cart-icon">
+              Cart 🛒
+              <span id="cart-count">0</span>
+            </a>
+            <a href="login.html" class="login-btn">Login</a>
+          </div>
+
+          <div id="cross">✕</div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="all-products">
+        <div class="container">
+          <h2>All Products</h2>
+          <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+              <img
+                src="https://vardanethnic.in/wp-content/uploads/2024/05/GLAMOUR%20Vol%2002%201-scaled.webp"
+                alt="Kurti"
+                loading="lazy"
+              />
+              <h3>Kurti</h3>
+              <p class="price">$490.99</p>
+              <div class="star">⭐⭐⭐</div>
+              <button
+                class="btn add-to-cart"
+                data-id="1"
+                data-name="Kurti"
+                data-price="490.99"
+              >
+                Add to Cart
+              </button>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+              <img
+                src="https://image.hm.com/assets/hm/0e/1e/0e1e593d510f4498322997de971cc0623e70fa64.jpg?imwidth=2160"
+                alt="Sleeveless top"
+                loading="lazy"
+              />
+              <h3>Sleeveless top</h3>
+              <p class="price">$129.99</p>
+              <div class="star">⭐⭐⭐⭐</div>
+              <button
+                class="btn add-to-cart"
+                data-id="2"
+                data-name="Sleeveless top"
+                data-price="129.99"
+              >
+                Add to Cart
+              </button>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+              <img
+                src="https://thecaistore.com/cdn/shop/files/3_2f659f0b-85e3-4066-be17-55e71d0c05ff_1080x.png?v=1737527588"
+                alt="Sandal"
+                loading="lazy"
+              />
+              <h3>Sandal</h3>
+              <p class="price">$199.99</p>
+              <div class="star">⭐⭐⭐⭐⭐</div>
+              <button
+                class="btn add-to-cart"
+                data-id="3"
+                data-name="Sandal"
+                data-price="199.99"
+              >
+                Add to Cart
+              </button>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+              <img
+                src="https://imagescdn.allensolly.com/img/app/product/8/865645-14041052.jpg?auto=format&w=390"
+                alt="Stylish jeans"
+                loading="lazy"
+              />
+              <h3>Stylish jeans</h3>
+              <p class="price">$890.99</p>
+              <div class="star">⭐⭐⭐⭐⭐</div>
+              <button
+                class="btn add-to-cart"
+                data-id="4"
+                data-name="Stylish jeans"
+                data-price="890.99"
+              >
+                Add to Cart
+              </button>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-card">
+              <img
+                src="https://arrowmax.in/cdn/shop/files/IMG_6788A.jpg?v=1708618606"
+                alt="Swimming Specs"
+                loading="lazy"
+              />
+              <h3>Swimming Specs</h3>
+              <p class="price">$79.99</p>
+              <div class="star">⭐⭐⭐⭐⭐</div>
+              <button
+                class="btn add-to-cart"
+                data-id="5"
+                data-name="Swimming Specs"
+                data-price="79.99"
+              >
+                Add to Cart
+              </button>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product-card">
+              <img
+                src="https://static.cilory.com/737128-thickbox_default/abstract-printed-casual-half-sleeves-mens-shirt.jpg.webp"
+                alt="Classic Sunglasses"
+                loading="lazy"
+              />
+              <h3>Classic Sunglasses</h3>
+              <p class="price">$39.99</p>
+              <div class="star">⭐⭐⭐⭐⭐</div>
+              <button
+                class="btn add-to-cart"
+                data-id="6"
+                data-name="Classic Sunglasses"
+                data-price="39.99"
+              >
+                Add to Cart
+              </button>
+            </div>
+
+            <!-- Product 7 -->
+            <div class="product-card">
+              <img
+                src="https://impakto.in/cdn/shop/files/AJANTA24012421649copy.jpg?v=1750759859"
+                alt="Shoes"
+                loading="lazy"
+              />
+              <h3>Shoes</h3>
+              <p class="price">$390.99</p>
+              <div class="star">⭐⭐⭐⭐⭐</div>
+              <button
+                class="btn add-to-cart"
+                data-id="7"
+                data-name="Shoes"
+                data-price="390.99"
+              >
+                Add to Cart
+              </button>
+            </div>
+
+            <!-- Product 8 -->
+            <div class="product-card">
+              <img
+                src="https://karatcart.com/cdn/shop/products/33015425_1_6a10bada-8036-423c-b950-d055abc77529.jpg?v=1656479470"
+                alt="Jewellary"
+                loading="lazy"
+              />
+              <h3>Asthetic Jewellary</h3>
+              <p class="price">$299.99</p>
+              <div class="star">⭐⭐⭐⭐</div>
+              <button
+                class="btn add-to-cart"
+                data-id="8"
+                data-name="Jewellary"
+                data-price="299.99"
+              >
+                Add to Cart
+              </button>
+            </div>
+
+            <!-- Product 9 -->
+            <div class="product-card">
+              <img
+                src="https://assets.myntassets.com/dpr_1.5,q_30,w_400,c_limit,fl_progressive/assets/images/2025/NOVEMBER/24/60qiPdjC_3b5ea8b7f008437886a7ed1ac19f3438.jpg"
+                alt="airpods"
+                loading="lazy"
+              />
+              <h3>Airpods</h3>
+              <p class="price">$590.99</p>
+              <div class="star">⭐⭐⭐⭐</div>
+              <button
+                class="btn add-to-cart"
+                data-id="9"
+                data-name="Airpods"
+                data-price="590.99"
+              >
+                Add to Cart
+              </button>
+            </div>
+
+            <!-- Product 10 -->
+            <div class="product-card">
+              <img
+                src="https://www.carlington.in/cdn/shop/files/Carliongton_premium_black_analog_mens_s_watch_6020.jpg?v=1712818158&width=2048"
+                alt="Handwatch"
+                loading="lazy"
+              />
+              <h3>Handwatch</h3>
+              <p class="price">$599.99</p>
+              <div class="star">⭐⭐⭐⭐⭐</div>
+              <button
+                class="btn add-to-cart"
+                data-id="10"
+                data-name="Handwatch"
+                data-price="599.99"
+              >
+                Add to Cart
+              </button>
+            </div>
+
+            <!-- Product 11 -->
+            <div class="product-card">
+              <img
+                src="https://wholesuits.com/wp-content/uploads/2024/06/Aglow-White-Color-Chinon-Silk-Embroidery-Sequence-Work-Gown-3-scaled-2.jpeg"
+                alt="Elegant Dress"
+                loading="lazy"
+              />
+              <h3>Elegant Dress</h3>
+              <p class="price">$999.99</p>
+              <div class="star">⭐⭐⭐⭐</div>
+              <button
+                class="btn add-to-cart"
+                data-id="11"
+                data-name="Elegant Dress"
+                data-price="999.99"
+              >
+                Add to Cart
+              </button>
+            </div>
+
+            <!-- Product 12 -->
+            <div class="product-card">
+              <img
+                src="https://i.pinimg.com/236x/e3/55/c1/e355c1a851630acf1226d8b835cb05f9.jpg"
+                alt="Nail extension"
+                loading="lazy"
+              />
+              <h3>Nail Extension</h3>
+              <p class="price">$49.99</p>
+              <div class="star">⭐⭐⭐⭐</div>
+              <button
+                class="btn add-to-cart"
+                data-id="12"
+                data-name="Nail Extension"
+                data-price="49.99"
+              >
+                Add to Cart
+              </button>
+            </div>
+
+            <!-- Product 13 -->
+            <div class="product-card">
+              <img
+                src="https://m.media-amazon.com/images/I/91b7lLP3n+L.jpg"
+                alt="clips"
+                loading="lazy"
+              />
+              <h3>Hair Clips</h3>
+              <p class="price">$79.99</p>
+              <div class="star">⭐⭐⭐⭐</div>
+              <button
+                class="btn add-to-cart"
+                data-id="13"
+                data-name="Hair Clips"
+                data-price="79.99"
+              >
+                Add to Cart
+              </button>
+            </div>
+
+            <!-- Product 14 -->
+            <div class="product-card">
+              <img
+                src="https://assets.myntassets.com/dpr_1.5,q_30,w_400,c_limit,fl_progressive/assets/images/2025/OCTOBER/1/ny2Cujer_caf5eb110690468c8dbe07de5aa972e1.jpg"
+                alt="lipsticks"
+                loading="lazy"
+              />
+              <h3>Lipstick</h3>
+              <p class="price">$89.99</p>
+              <div class="star">⭐⭐⭐⭐</div>
+              <button
+                class="btn add-to-cart"
+                data-id="14"
+                data-name="Lipstick"
+                data-price="89.99"
+              >
+                Add to Cart
+              </button>
+            </div>
+
+            <div class="product-card">
+              <img
+                src="https://static.wixstatic.com/media/1738b0_ca61855377b942d3af6418a6add6798e~mv2.jpg/v1/fill/w_568,h_568,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/1738b0_ca61855377b942d3af6418a6add6798e~mv2.jpg"
+                alt="Perfumes"
+                loading="lazy"
+              />
+              <h3>Men Perfume</h3>
+              <p class="price">$890.99</p>
+              <div class="star">⭐⭐⭐⭐</div>
+              <button
+                class="btn add-to-cart"
+                data-id="14"
+                data-name="Men Perfume"
+                data-price="890.99"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section id="newsletter">
+      <div>
+        <h2>Sign Up For Newsletters</h2>
+        <p>Get an E-mail updates about our <span>latest offer</span>.</p>
+      </div>
+      <div>
+        <input type="text" placeholder="Your Email Address" />
+        <button>Sign Up</button>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- About Section -->
+        <div class="footer-box">
+          <h3>TrendyShop</h3>
+          <p>
+            TrendyShop is your one-stop online store for fashion, electronics,
+            and lifestyle products. Quality products, best prices, fast
+            delivery.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-box">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Offers</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Customer Service -->
+        <div class="footer-box">
+          <h3>Customer Service</h3>
+          <ul>
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">Orders</a></li>
+            <li><a href="#">Wishlist</a></li>
+            <li><a href="#">Returns & Refunds</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter & Social -->
+        <div class="footer-box">
+          <h3>Stay Connected</h3>
+
+          <div class="social-icons">
+            <a href="#">🌐</a>
+            <a href="#">📘</a>
+            <a href="#">📸</a>
+            <a href="#">🐦</a>
+            <a href="#">▶️</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>© 2025 TrendyShop. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
